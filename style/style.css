@@ -1,0 +1,107 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: lightgray;
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+	background-color: pink;
+	width: 100%;
+	height: 60px;
+	margin-bottom: 30px;
+}
+
+#nav-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 90vw;
+	height: 100%;
+}
+
+#brand-name {
+	font-size: 1.5em;
+}
+
+#search-box {
+	display: flex;
+	align-items: center;
+	width: 300px;
+	height: 40px;
+	position: relative;
+}
+
+#search-input {
+	padding: 0 80px 0 10px;
+	border: none;
+	outline: none;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+}
+
+#search-button {
+	box-sizing: border-box;
+	font-size: 1em;
+	padding: 7px;
+	border-radius: 5px;
+	transform: translate(-3px);
+	right: 0;
+	border-style: none;
+	background-color: lightgray;
+	position: absolute;
+	outline: 0;
+	cursor: pointer;
+}
+
+main {
+	width: 90vw;
+}
+
+#meals {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+meal-item {
+	transition-duration: 500ms;
+	background-color: white;
+	width: 300px;
+	height: 400px;
+	margin: 30px;
+	padding: 10px;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+meal-item:hover {
+	transform: scale(1.05);
+}
+
+meal-item .meal-link {
+	text-decoration: none;
+	color: black;
+}
+
+meal-item .meal-name {
+	display: block;
+	width: 100%;
+	font-size: 1.7em;
+}
+
+meal-item .meal-img {
+	border-radius: 10px;
+	width: 300px;
+	margin-bottom: 10px
+}
